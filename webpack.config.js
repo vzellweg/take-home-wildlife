@@ -1,4 +1,5 @@
 const ESLintPlugin = require("eslint-webpack-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
 const webpack = require("webpack");
 
@@ -35,9 +36,24 @@ module.exports = (env) => {
           exclude: /node_modules/,
           use: ["babel-loader"],
         },
+        {
+          test: /\.(png|jpe?g|gif|svg)$/i,
+          use: [
+            {
+              loader: "file-loader",
+              options: {
+                name: "[path][name].[ext]",
+              },
+            },
+          ],
+        },
       ],
     },
     plugins: [
+      new HtmlWebpackPlugin({
+        title: "Take Home Wildlife",
+        template: "public/index.html",
+      }),
       new webpack.HotModuleReplacementPlugin(),
       new ESLintPlugin({
         failOnWarning: false,
