@@ -8,6 +8,7 @@ module.exports = (env) => {
   return {
     mode: mode,
     target: "web",
+    devtool: env.mode === "development" ? "eval-source-map" : "nosources-source-map",
     entry: [path.join(__dirname, "src/index.js")],
     output: {
       path: path.join(__dirname, "/build"),
