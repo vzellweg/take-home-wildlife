@@ -27,11 +27,11 @@ A project boilerplate has been provided using webpack and React, but you are not
 * Modify the code locally to accomplish the demo requirements.
 * Push your completed project to a public repo in your own personal Github account and email Danielle.Franklin@oregonstate.edu the address of the public repo so we can review it.
 
-### Reminders:
+### Notes and reminders:
 
 * You cannot bring in any additional dependencies. You must use CSS, HTML, and Javascript to accomplish this project.
 * The data file and images should be loaded by the app at runtime. Do not store the animal info or images locally in the project.
-* Be prepared in the interview to discuss design decisions and tradeoffs you made while implementing the app.
+* The goal of this project is to demonstrate front-end development but not be a test of how long is spent polishing the end result. Please spend no more than 2-4 hours on development, and be prepared in the interview to discuss design decisions and tradeoffs you made while implementing this app
 
 ### Resources:
 
