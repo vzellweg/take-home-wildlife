@@ -27,9 +27,10 @@ A project boilerplate has been provided using webpack and React, but you are not
 * Modify the code locally to accomplish the demo requirements.
 * Push your completed project to a public repo in your own personal Github account and email Danielle.Franklin@oregonstate.edu the address of the public repo so we can review it.
 
-### Reminder:
+### Reminders:
 
 * You cannot bring in any additional dependencies. You must use CSS, HTML, and Javascript to accomplish this project.
+* The data file and images should be loaded by the app at runtime. Do not store the animal info or images locally in the project.
 * Be prepared in the interview to discuss design decisions and tradeoffs you made while implementing the app.
 
 ### Resources:
