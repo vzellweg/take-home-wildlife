@@ -1,7 +1,5 @@
 const ESLintPlugin = require("eslint-webpack-plugin");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
-const webpack = require("webpack");
 
 module.exports = (env) => {
   console.log("env.mode: " + env.mode);
@@ -50,11 +48,6 @@ module.exports = (env) => {
       ],
     },
     plugins: [
-      new HtmlWebpackPlugin({
-        title: "Take Home Wildlife",
-        template: "public/index.html",
-      }),
-      new webpack.HotModuleReplacementPlugin(),
       new ESLintPlugin({
         failOnWarning: false,
       }),
