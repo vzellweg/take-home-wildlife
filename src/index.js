@@ -17,8 +17,10 @@ class Card extends React.Component {
         const header = this.props.species_data_header;
         return (    
             <div className="card">
-                <img className={`responsive ${this.state.definition_displayed ? 'closed': ''}`} src={this.props.imageURL} onClick={() => {this.imgClick()}}
-                    alt="species picture"/>
+                <div className={`img-container ${this.state.definition_displayed ? 'closed': ''}`}>
+                    <img className={`responsive`} src={this.props.imageURL} onClick={() => {this.imgClick()}}
+                        alt="species picture"/><div className="img-attrib">{species_data[header['credit']]}</div>
+                </div>
              <Definition open={this.state.definition_displayed ? 'open' : false}
                 name={species_data[header['name']]}
                 class={species_data[header['class']]}
