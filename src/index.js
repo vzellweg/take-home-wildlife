@@ -17,9 +17,8 @@ class Card extends React.Component {
         const header = this.props.species_data_header;
         return (    
             <div className="card">
-                <img className={`responsive ${this.state.definition_displayed ? 'closed': ''}`} src={this.props.imageURL} onClick={() => {this.imgClick()}}>
-                    
-                </img>
+                <img className={`responsive ${this.state.definition_displayed ? 'closed': ''}`} src={this.props.imageURL} onClick={() => {this.imgClick()}}
+                    alt="species picture"/>
              <Definition open={this.state.definition_displayed ? 'open' : false}
                 name={species_data[header['name']]}
                 class={species_data[header['class']]}
@@ -134,7 +133,7 @@ class App extends React.Component {
         if (!species_data_table.length) { return null; }
         return (
             <div className="app">
-                <h1 className="title">Wildlife  Flashcards</h1>
+                <h2 className="title">Click Flash Card to show the other side</h2>
                 <div className="btnContainer">
                     <button className="nextBtn" onClick={() => {this.openPreviousCard()}}>
                         Previous Card
