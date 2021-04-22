@@ -1,4 +1,60 @@
 .title {
-    font-weight: bold;
-    text-decoration: underline;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    text-align: center;
+    margin: 5px 0;
 }
+
+.btnContainer {
+    display: flex;
+    justify-content: space-between;
+}
+.speciesInfo {
+    font-size: 2em;
+    text-align: right;
+    margin: 10px;
+}
+.speciesInfo .row{
+    display: flex;
+    justify-content: space-between;
+    padding: 2px 5px;
+    border-bottom: thin solid silver;
+}
+.speciesInfo .dataTitle {
+    padding-right: 10px;
+    text-align: left;
+}
+
+.card .closed{
+    display: none;
+}
+
+.nextBtn {
+    margin-right: 0;
+}
+
+.card .responsive {
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 10px 0;
+  }
+
+.app {
+    width:60%;
+    margin: auto;   
+}
+
+@media (max-width: 1280px) {
+    .app {
+        width:80%;   
+    }
+  }
+
+@media (max-width: 800px) {
+    .app {
+        width:100%;   
+    }
+    .btnRow {
+        flex-direction: flex;
+        justify-content: space-between;
+    }
+  }
